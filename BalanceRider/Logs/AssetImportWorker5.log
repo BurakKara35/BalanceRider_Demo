@@ -1,0 +1,109 @@
+Using pre-set license
+Built from '2020.2/release' branch; Version is '2020.2.1f1 (270dd8c3da1c) revision 2559448'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.0) 64bit' Language: 'tr' Physical Memory: 16257 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.2.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker5
+-projectPath
+D:/UnityProjects/BalanceRider
+-logFile
+Logs/AssetImportWorker5.log
+-srvPort
+60146
+Successfully changed project path to: D:/UnityProjects/BalanceRider
+D:/UnityProjects/BalanceRider
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 20.75 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/UnityProjects/BalanceRider/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c8d)
+    Vendor:   
+    VRAM:     4019 MB
+    Driver:   27.21.14.5749
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56912
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002181 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 20.92 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.916 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000554 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.762 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1100 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.4 MB.
+System memory in use after: 68.5 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1557.
+Total: 2.126300 ms (FindLiveObjects: 0.249600 ms CreateObjectMapping: 0.057500 ms MarkObjects: 1.748300 ms  DeleteObjects: 0.066800 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/EasySuspension/New Terrain.asset
+  artifactKey: Guid(43da89f0fcc654f589dc32f1111044dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EasySuspension/New Terrain.asset using Guid(43da89f0fcc654f589dc32f1111044dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Received signal SIGSEGV
+Stack trace:
+0x00007ff7ebe7354a (Unity) CreateAssetToGUIDMappingV2
+0x00007ff7ebdea2c0 (Unity) AssetDatabase::CreateAssetToGUIDMapping
+0x00007ff7eac0b080 (Unity) SplatDatabase::CreateTerrainLayerAsset
+0x00007ff7eac09c60 (Unity) SplatDatabase::ConvertSplatsToTerrainLayers
+0x00007ff7eac06b64 (Unity) SplatDatabase::AwakeFromLoad
+0x00007ff7eac51b0a (Unity) TerrainData::AwakeFromLoad
+0x00007ff7ea7c39e3 (Unity) AwakeFromLoadQueue::InvokePersistentManagerAwake
+0x00007ff7ea7c43a2 (Unity) AwakeFromLoadQueue::PersistentManagerAwakeFromLoad
+0x00007ff7ea7c451a (Unity) AwakeFromLoadQueue::PersistentManagerAwakeFromLoad
+0x00007ff7ea75358e (Unity) PersistentManager::IntegrateAllThreadedObjects
+0x00007ff7ea753d77 (Unity) PersistentManager::LoadAndIntegrateAllPreallocatedObjects
+0x00007ff7ea757303 (Unity) PersistentManager::ReadObject
+0x00007ff7ebde3511 (Unity) WritePreviews
+0x00007ff7ebddd2cf (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7ebee86cf (Unity) ImportToObjects
+0x00007ff7ebee7563 (Unity) AssetImportWorker::Import
+0x00007ff7ebe47c5a (Unity) <lambda_38cb8e830f13df306cf541a58f16cf03>::operator()
+0x00007ff7ebf120d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7ebf14230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7ebf179be (Unity) asio::io_service::run
+0x00007ff7ebe8dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7ebe8dda0 (Unity) RunAssetImporterV2
+0x00007ff7eb3ad73b (Unity) Application::InitializeProject
+0x00007ff7ebd22be2 (Unity) WinMain
+0x00007ff7edb68fc6 (Unity) __scrt_common_main_seh
+0x00007ffc1fc57034 (KERNEL32) BaseThreadInitThunk
+0x00007ffc21c02651 (ntdll) RtlUserThreadStart
+
